@@ -47,7 +47,7 @@ class TabItem {
     // Assign this.element to the passed in element
     // this.element;
     this.element = element
-    console.log(element)
+    
   }
 
   select() {
@@ -62,7 +62,7 @@ class TabItem {
             this.element.classList.add('tabs-item-selected')
     })
     // Remove the class "tabs-item-selected" from each element
-    console.log('hello')
+   
     // Add a class named "tabs-item-selected" to this element
     //this.element;
   }
@@ -77,7 +77,7 @@ class TabItem {
 - In your .forEach() method's callback function, return a new instance of TabLink and pass in each link as a parameter
 
 */
-
+let links
 links = document.querySelectorAll('.tabs-link').forEach(
   (link)=>{
     return new TabLink(link)
